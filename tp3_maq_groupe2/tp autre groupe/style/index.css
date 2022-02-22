@@ -1,0 +1,64 @@
+/* BANNER */
+.banner {
+    background: no-repeat center url(../img/banner.jpg);
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+/* CATCHPHRASE */
+.catchphrase {
+    grid-row: 2;
+    grid-column: 1;
+    justify-self: end;
+    font-family: 'Noto Serif Display', serif;
+    color: white;
+    font-size: 2em;
+    transition: transform 2s;
+}
+
+.h1-catchphrase {
+    transition: transform 1s;
+}
+
+.catchphrase:hover {
+    transform: scale(1.2);
+}
+
+/* SEARCH ZONE */
+.travelFinder {
+    color: white;
+    grid-row: 3;
+    grid-column: 2;
+    font-family: 'Noto Serif Display', serif;
+    font-size: 2em;
+}
+
+h4 {
+    display: inline-block;
+    padding: 4px;
+}
+
+.form-inline {
+    display: flex;
+}
+
+.form-control {
+    margin-right: 10px;
+}
+
+/* DATEPICKER */
+.datepicker {
+    font-size: 0.4em;
+}
+
+.DPstart {
+    margin-right: 140px;
+}
+
+.DPstart2 {
+    margin-right: 120px;
+}
+
+

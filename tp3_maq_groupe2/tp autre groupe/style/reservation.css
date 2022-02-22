@@ -1,0 +1,22 @@
+#info{
+    border-radius: 5px;
+    border: solid 1px;
+}
+h1{
+    text-align: center;
+}
+
+#dropdownMenuButton1{
+    border: solid 1px;
+}
+
+#jeSuisNul{
+    padding-top: 20rem;
+}
+footer{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    padding-top:50px;
+    height:50px;
+    }

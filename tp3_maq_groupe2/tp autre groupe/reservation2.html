@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservations - CAHA AirLine</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/reservation.css">
+</head>
+<body>
+    <!-- menu navigation -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="img/logo.png" alt="" width="30"> CAHA AirLine</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse nav-cent" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">
+                    <div class="nav-wrapper">
+                        <img src="img/heart.png" alt="heart icon" width="30" class="nav-img"><span class="nav-wrapped">Accueil</span>
+                    </div></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="compte.html">
+                        <div class="nav-wrapper">
+                        <img src="img/user.png" alt="heart icon" width="30" class="nav-img"><div class="nav-wrapped">Compte</div>
+                        </div></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="reservation2.html">
+                        <div class="nav-wrapper">
+                        <img src="img/suitcase.png" alt="heart icon" width="30" class="nav-img"><div class="nav-wrapped">Réservations</div>
+                        </div></a>
+                  </li>              
+                  <li class="nav-item">
+                    <a class="nav-link" href="aide.html">
+                        <div class="nav-wrapper">
+                        <img src="img/question-mark.png" alt="heart icon" width="30" class="nav-img"><div class="nav-wrapped">Aide</div>
+                        </div></a>
+                  </li>              
+                  <li class="nav-item">
+                    <a class="nav-link" href="avis.html">
+                        <div class="nav-wrapper">
+                        <img src="img/star.png" alt="heart icon" width="30" class="nav-img"><div class="nav-wrapped">Avis</div>
+                        </div></a>
+                  </li>
+              </div>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <li class="nav-item d-flex align-items-start">
+                    <a class="nav-link" href="connexion.html">
+                            <button type="button" class="btn btn-primary">Connexion</button></a>
+                </li>
+                <li class="nav-item d-flex align-items-start">
+                    <a class="nav-link" href="inscription.html">
+                            <button type="button" class="btn btn-light">Inscription</button></a>
+                </li>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <!-- bloc pour le placement -->
+    <div class="my-5 mx-5 d-flex-column justify-content-align-center" style="width: 100rem,">
+<!-- navbar -->
+        <div class="contenair bg-dark text-white" id="info">
+            <div class="row">
+                <h3 class="col ms-2">Mes réservations</h3>
+                <div class="col my-2">
+                    <label for="inputPassword4" class="form-label">Destination</label>
+                    <button class="btn text-white dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Choisir</button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="AFG">Afghane (Afghanistan)</a></li>
+                        <li><a class="dropdown-item" href="ALB">Albanaise (Albanie)</a></li>
+                        <li><a class="dropdown-item" href="DZA">Algérienne (Algérie)</a></li>
+                        <li><a class="dropdown-item" href="DEU">Allemande (Allemagne)</a></li>
+                        <li><a class="dropdown-item" href="USA">Americaine (États-Unis)</a></li>
+                        <li><a class="dropdown-item" href="AND">Andorrane (Andorre)</a></li>
+                        <li><a class="dropdown-item" href="AGO">Angolaise (Angola)</a></li>
+                        <li><a class="dropdown-item" href="ATG">Antiguaise-et-Barbudienne (Antigua-et-Barbuda)</a></li>
+                        <li><a class="dropdown-item" href="ARG">Argentine (Argentine)</a></li>
+                        <li><a class="dropdown-item" href="ARM">Armenienne (Arménie)</a></li>
+                        <li><a class="dropdown-item" href="AUS">Australienne (Australie)</a></li>
+                        <li><a class="dropdown-item" href="AUT">Autrichienne (Autriche)</a></li>
+                        <li><a class="dropdown-item" href="AZE">Azerbaïdjanaise (Azerbaïdjan)</a></li>
+                        <li><a class="dropdown-item" href="BHS">Bahamienne (Bahamas)</a></li>
+                        <li><a class="dropdown-item" href="BHR">Bahreinienne (Bahreïn)</a></li>
+                        <li><a class="dropdown-item" href="BGD">Bangladaise (Bangladesh)</a></li>
+                        <li><a class="dropdown-item" href="BRB">Barbadienne (Barbade)</a></li>
+                        <li><a class="dropdown-item" href="BEL">Belge (Belgique)</a></li>
+                        <li><a class="dropdown-item" href="BLZ">Belizienne (Belize)</a></li>
+                        <li><a class="dropdown-item" href="BEN">Béninoise (Bénin)</a></li>
+                        <li><a class="dropdown-item" href="BTN">Bhoutanaise (Bhoutan)</a></li>
+                        <li><a class="dropdown-item" href="BLR">Biélorusse (Biélorussie)</a></li>
+                        <li><a class="dropdown-item" href="MMR">Birmane (Birmanie)</a></li>
+                        <li><a class="dropdown-item" href="GNB">Bissau-Guinéenne (Guinée-Bissau)</a></li>
+                        <li><a class="dropdown-item" href="BOL">Bolivienne (Bolivie)</a></li>
+                        <li><a class="dropdown-item" href="BIH">Bosnienne (Bosnie-Herzégovine)</a></li>
+                        <li><a class="dropdown-item" href="BWA">Botswanaise (Botswana)</a></li>
+                        <li><a class="dropdown-item" href="BRA">Brésilienne (Brésil)</a></li>
+                        <li><a class="dropdown-item" href="GBR">Britannique (Royaume-Uni)</a></li>
+                        <li><a class="dropdown-item" href="BRN">Brunéienne (Brunéi)</a></li>
+                        <li><a class="dropdown-item" href="BGR">Bulgare (Bulgarie)</a></li>
+                        <li><a class="dropdown-item" href="BFA">Burkinabée (Burkina)</a></li>
+                        <li><a class="dropdown-item" href="BDI">Burundaise (Burundi)</a></li>
+                        <li><a class="dropdown-item" href="KHM">Cambodgienne (Cambodge)</a></li>
+                        <li><a class="dropdown-item" href="CMR">Camerounaise (Cameroun)</a></li>
+                        <li><a class="dropdown-item" href="CAN">Canadienne (Canada)</a></li>
+                        <li><a class="dropdown-item" href="CPV">Cap-verdienne (Cap-Vert)</a></li>
+                        <li><a class="dropdown-item" href="CAF">Centrafricaine (Centrafrique)</a></li>
+                        <li><a class="dropdown-item" href="CHL">Chilienne (Chili)</a></li>
+                        <li><a class="dropdown-item" href="CHN">Chinoise (Chine)</a></li>
+                        <li><a class="dropdown-item" href="CYP">Chypriote (Chypre)</a></li>
+                        <li><a class="dropdown-item" href="COL">Colombienne (Colombie)</a></li>
+                        <li><a class="dropdown-item" href="COM">Comorienne (Comores)</a></li>
+                        <li><a class="dropdown-item" href="COG">Congolaise (Congo-Brazzaville)</a></li>
+                        <li><a class="dropdown-item" href="COD">Congolaise (Congo-Kinshasa)</a></li>
+                        <li><a class="dropdown-item" href="COK">Cookienne (Îles Cook)</a></li>
+                        <li><a class="dropdown-item" href="CRI">Costaricaine (Costa Rica)</a></li>
+                        <li><a class="dropdown-item" href="HRV">Croate (Croatie)</a></li>
+                        <li><a class="dropdown-item" href="CUB">Cubaine (Cuba)</a></li>
+                        <li><a class="dropdown-item" href="DNK">Danoise (Danemark)</a></li>
+                        <li><a class="dropdown-item" href="DJI">Djiboutienne (Djibouti)</a></li>
+                        <li><a class="dropdown-item" href="DOM">Dominicaine (République dominicaine)</a></li>
+                        <li><a class="dropdown-item" href="DMA">Dominiquaise (Dominique)</a></li>
+                        <li><a class="dropdown-item" href="EGY">Égyptienne (Égypte)</a></li>
+                        <li><a class="dropdown-item" href="ARE">Émirienne (Émirats arabes unis)</a></li>
+                        <li><a class="dropdown-item" href="GNQ">Équato-guineenne (Guinée équatoriale)</a></li>
+                        <li><a class="dropdown-item" href="ECU">Équatorienne (Équateur)</a></li>
+                        <li><a class="dropdown-item" href="ERI">Érythréenne (Érythrée)</a></li>
+                        <li><a class="dropdown-item" href="ESP">Espagnole (Espagne)</a></li>
+                        <li><a class="dropdown-item" href="TLS">Est-timoraise (Timor-Leste)</a></li>
+                        <li><a class="dropdown-item" href="EST">Estonienne (Estonie)</a></li>
+                        <li><a class="dropdown-item" href="ETH">Éthiopienne (Éthiopie)</a></li>
+                        <li><a class="dropdown-item" href="FJI">Fidjienne (Fidji)</a></li>
+                        <li><a class="dropdown-item" href="FIN">Finlandaise (Finlande)</a></li>
+                        <li><a class="dropdown-item" href="FRA">Française (France)</a></li>
+                        <li><a class="dropdown-item" href="GAB">Gabonaise (Gabon)</a></li>
+                        <li><a class="dropdown-item" href="GMB">Gambienne (Gambie)</a></li>
+                        <li><a class="dropdown-item" href="GEO">Georgienne (Géorgie)</a></li>
+                        <li><a class="dropdown-item" href="GHA">Ghanéenne (Ghana)</a></li>
+                        <li><a class="dropdown-item" href="GRD">Grenadienne (Grenade)</a></li>
+                        <li><a class="dropdown-item" href="GTM">Guatémaltèque (Guatemala)</a></li>
+                        <li><a class="dropdown-item" href="GIN">Guinéenne (Guinée)</a></li>
+                        <li><a class="dropdown-item" href="GUY">Guyanienne (Guyana)</a></li>
+                        <li><a class="dropdown-item" href="HTI">Haïtienne (Haïti)</a></li>
+                        <li><a class="dropdown-item" href="GRC">Hellénique (Grèce)</a></li>
+                        <li><a class="dropdown-item" href="HND">Hondurienne (Honduras)</a></li>
+                        <li><a class="dropdown-item" href="HUN">Hongroise (Hongrie)</a></li>
+                        <li><a class="dropdown-item" href="IND">Indienne (Inde)</a></li>
+                        <li><a class="dropdown-item" href="IDN">Indonésienne (Indonésie)</a></li>
+                        <li><a class="dropdown-item" href="IRQ">Irakienne (Iraq)</a></li>
+                        <li><a class="dropdown-item" href="IRN">Iranienne (Iran)</a></li>
+                        <li><a class="dropdown-item" href="IRL">Irlandaise (Irlande)</a></li>
+                        <li><a class="dropdown-item" href="ISL">Islandaise (Islande)</a></li>
+                        <li><a class="dropdown-item" href="ISR">Israélienne (Israël)</a></li>
+                        <li><a class="dropdown-item" href="ITA">Italienne (Italie)</a></li>
+                        <li><a class="dropdown-item" href="CIV">Ivoirienne (Côte d'Ivoire)</a></li>
+                        <li><a class="dropdown-item" href="JAM">Jamaïcaine (Jamaïque)</a></li>
+                        <li><a class="dropdown-item" href="JPN">Japonaise (Japon)</a></li>
+                        <li><a class="dropdown-item" href="JOR">Jordanienne (Jordanie)</a></li>
+                        <li><a class="dropdown-item" href="KAZ">Kazakhstanaise (Kazakhstan)</a></li>
+                        <li><a class="dropdown-item" href="KEN">Kenyane (Kenya)</a></li>
+                        <li><a class="dropdown-item" href="KGZ">Kirghize (Kirghizistan)</a></li>
+                        <li><a class="dropdown-item" href="KIR">Kiribatienne (Kiribati)</a></li>
+                        <li><a class="dropdown-item" href="KNA">Kittitienne et Névicienne (Saint-Christophe-et-Niévès)</a></li>
+                        <li><a class="dropdown-item" href="KWT">Koweïtienne (Koweït)</a></li>
+                        <li><a class="dropdown-item" href="LAO">Laotienne (Laos)</a></li>
+                        <li><a class="dropdown-item" href="LSO">Lesothane (Lesotho)</a></li>
+                        <li><a class="dropdown-item" href="LVA">Lettone (Lettonie)</a></li>
+                        <li><a class="dropdown-item" href="LBN">Libanaise (Liban)</a></li>
+                        <li><a class="dropdown-item" href="LBR">Libérienne (Libéria)</a></li>
+                        <li><a class="dropdown-item" href="LBY">Libyenne (Libye)</a></li>
+                        <li><a class="dropdown-item" href="LIE">Liechtensteinoise (Liechtenstein)</a></li>
+                        <li><a class="dropdown-item" href="LTU">Lituanienne (Lituanie)</a></li>
+                        <li><a class="dropdown-item" href="LUX">Luxembourgeoise (Luxembourg)</a></li>
+                        <li><a class="dropdown-item" href="MKD">Macédonienne (Macédoine)</a></li>
+                        <li><a class="dropdown-item" href="MYS">Malaisienne (Malaisie)</a></li>
+                        <li><a class="dropdown-item" href="MWI">Malawienne (Malawi)</a></li>
+                        <li><a class="dropdown-item" href="MDV">Maldivienne (Maldives)</a></li>
+                        <li><a class="dropdown-item" href="MDG">Malgache (Madagascar)</a></li>
+                        <li><a class="dropdown-item" href="MLI">Maliennes (Mali)</a></li>
+                        <li><a class="dropdown-item" href="MLT">Maltaise (Malte)</a></li>
+                        <li><a class="dropdown-item" href="MAR">Marocaine (Maroc)</a></li>
+                        <li><a class="dropdown-item" href="MHL">Marshallaise (Îles Marshall)</a></li>
+                        <li><a class="dropdown-item" href="MUS">Mauricienne (Maurice)</a></li>
+                        <li><a class="dropdown-item" href="MRT">Mauritanienne (Mauritanie)</a></li>
+                        <li><a class="dropdown-item" href="MEX">Mexicaine (Mexique)</a></li>
+                        <li><a class="dropdown-item" href="FSM">Micronésienne (Micronésie)</a></li>
+                        <li><a class="dropdown-item" href="MDA">Moldave (Moldovie)</a></li>
+                        <li><a class="dropdown-item" href="MCO">Monegasque (Monaco)</a></li>
+                        <li><a class="dropdown-item" href="MNG">Mongole (Mongolie)</a></li>
+                        <li><a class="dropdown-item" href="MNE">Monténégrine (Monténégro)</a></li>
+                        <li><a class="dropdown-item" href="MOZ">Mozambicaine (Mozambique)</a></li>
+                        <li><a class="dropdown-item" href="NAM">Namibienne (Namibie)</a></li>
+                        <li><a class="dropdown-item" href="NRU">Nauruane (Nauru)</a></li>
+                        <li><a class="dropdown-item" href="NLD">Néerlandaise (Pays-Bas)</a></li>
+                        <li><a class="dropdown-item" href="NZL">Néo-Zélandaise (Nouvelle-Zélande)</a></li>
+                        <li><a class="dropdown-item" href="NPL">Népalaise (Népal)</a></li>
+                        <li><a class="dropdown-item" href="NIC">Nicaraguayenne (Nicaragua)</a></li>
+                        <li><a class="dropdown-item" href="NGA">Nigériane (Nigéria)</a></li>
+                        <li><a class="dropdown-item" href="NER">Nigérienne (Niger)</a></li>
+                        <li><a class="dropdown-item" href="NIU">Niuéenne (Niue)</a></li>
+                        <li><a class="dropdown-item" href="PRK">Nord-coréenne (Corée du Nord)</a></li>
+                        <li><a class="dropdown-item" href="NOR">Norvégienne (Norvège)</a></li>
+                        <li><a class="dropdown-item" href="OMN">Omanaise (Oman)</a></li>
+                        <li><a class="dropdown-item" href="UGA">Ougandaise (Ouganda)</a></li>
+                        <li><a class="dropdown-item" href="UZB">Ouzbéke (Ouzbékistan)</a></li>
+                        <li><a class="dropdown-item" href="PAK">Pakistanaise (Pakistan)</a></li>
+                        <li><a class="dropdown-item" href="PLW">Palaosienne (Palaos)</a></li>
+                        <li><a class="dropdown-item" href="PSE">Palestinienne (Palestine)</a></li>
+                        <li><a class="dropdown-item" href="PAN">Panaméenne (Panama)</a></li>
+                        <li><a class="dropdown-item" href="PNG">Papouane-Néo-Guinéenne (Papouasie-Nouvelle-Guinée)</a></li>
+                        <li><a class="dropdown-item" href="PRY">Paraguayenne (Paraguay)</a></li>
+                        <li><a class="dropdown-item" href="PER">Péruvienne (Pérou)</a></li>
+                        <li><a class="dropdown-item" href="PHL">Philippine (Philippines)</a></li>
+                        <li><a class="dropdown-item" href="POL">Polonaise (Pologne)</a></li>
+                        <li><a class="dropdown-item" href="PRT">Portugaise (Portugal)</a></li>
+                        <li><a class="dropdown-item" href="QAT">Qatarienne (Qatar)</a></li>
+                        <li><a class="dropdown-item" href="ROU">Roumaine (Roumanie)</a></li>
+                        <li><a class="dropdown-item" href="RUS">Russe (Russie)</a></li>
+                        <li><a class="dropdown-item" href="RWA">Rwandaise (Rwanda)</a></li>
+                        <li><a class="dropdown-item" href="LCA">Saint-Lucienne (Sainte-Lucie)</a></li>
+                        <li><a class="dropdown-item" href="SMR">Saint-Marinaise (Saint-Marin)</a></li>
+                        <li><a class="dropdown-item" href="VCT">Saint-Vincentaise et Grenadine (Saint-Vincent-et-les Grenadines)</a></li>
+                        <li><a class="dropdown-item" href="SLB">Salomonaise (Îles Salomon)</a></li>
+                        <li><a class="dropdown-item" href="SLV">Salvadorienne (Salvador)</a></li>
+                        <li><a class="dropdown-item" href="WSM">Samoane (Samoa)</a></li>
+                        <li><a class="dropdown-item" href="STP">Santoméenne (Sao Tomé-et-Principe)</a></li>
+                        <li><a class="dropdown-item" href="SAU">Saoudienne (Arabie saoudite)</a></li>
+                        <li><a class="dropdown-item" href="SEN">Sénégalaise (Sénégal)</a></li>
+                        <li><a class="dropdown-item" href="SRB">Serbe (Serbie)</a></li>
+                        <li><a class="dropdown-item" href="SYC">Seychelloise (Seychelles)</a></li>
+                        <li><a class="dropdown-item" href="SLE">Sierra-Léonaise (Sierra Leone)</a></li>
+                        <li><a class="dropdown-item" href="SGP">Singapourienne (Singapour)</a></li>
+                        <li><a class="dropdown-item" href="SVK">Slovaque (Slovaquie)</a></li>
+                        <li><a class="dropdown-item" href="SVN">Slovène (Slovénie)</a></li>
+                        <li><a class="dropdown-item" href="SOM">Somalienne (Somalie)</a></li>
+                        <li><a class="dropdown-item" href="SDN">Soudanaise (Soudan)</a></li>
+                        <li><a class="dropdown-item" href="LKA">Sri-Lankaise (Sri Lanka)</a></li>
+                        <li><a class="dropdown-item" href="ZAF">Sud-Africaine (Afrique du Sud)</a></li>
+                        <li><a class="dropdown-item" href="KOR">Sud-Coréenne (Corée du Sud)</a></li>
+                        <li><a class="dropdown-item" href="SSD">Sud-Soudanaise (Soudan du Sud)</a></li>
+                        <li><a class="dropdown-item" href="SWE">Suédoise (Suède)</a></li>
+                        <li><a class="dropdown-item" href="CHE">Suisse (Suisse)</a></li>
+                        <li><a class="dropdown-item" href="SUR">Surinamaise (Suriname)</a></li>
+                        <li><a class="dropdown-item" href="SWZ">Swazie (Swaziland)</a></li>
+                        <li><a class="dropdown-item" href="SYR">Syrienne (Syrie)</a></li>
+                        <li><a class="dropdown-item" href="TJK">Tadjike (Tadjikistan)</a></li>
+                        <li><a class="dropdown-item" href="TZA">Tanzanienne (Tanzanie)</a></li>
+                        <li><a class="dropdown-item" href="TCD">Tchadienne (Tchad)</a></li>
+                        <li><a class="dropdown-item" href="CZE">Tchèque (Tchéquie)</a></li>
+                        <li><a class="dropdown-item" href="THA">Thaïlandaise (Thaïlande)</a></li>
+                        <li><a class="dropdown-item" href="TGO">Togolaise (Togo)</a></li>
+                        <li><a class="dropdown-item" href="TON">Tonguienne (Tonga)</a></li>
+                        <li><a class="dropdown-item" href="TTO">Trinidadienne (Trinité-et-Tobago)</a></li>
+                        <li><a class="dropdown-item" href="TUN">Tunisienne (Tunisie)</a></li>
+                        <li><a class="dropdown-item" href="TKM">Turkmène (Turkménistan)</a></li>
+                        <li><a class="dropdown-item" href="TUR">Turque (Turquie)</a></li>
+                        <li><a class="dropdown-item" href="TUV">Tuvaluane (Tuvalu)</a></li>
+                        <li><a class="dropdown-item" href="UKR">Ukrainienne (Ukraine)</a></li>
+                        <li><a class="dropdown-item" href="URY">Uruguayenne (Uruguay)</a></li>
+                        <li><a class="dropdown-item" href="VUT">Vanuatuane (Vanuatu)</a></li>
+                        <li><a class="dropdown-item" href="VAT">Vaticane (Vatican)</a></li>
+                        <li><a class="dropdown-item" href="VEN">Vénézuélienne (Venezuela)</a></li>
+                        <li><a class="dropdown-item" href="VNM">Vietnamienne (Viêt Nam)</a></li>
+                        <li><a class="dropdown-item" href="YEM">Yéménite (Yémen)</a></li>
+                        <li><a class="dropdown-item" href="ZMB">Zambienne (Zambie)</a></li>
+                        <li><a class="dropdown-item" href="ZWE">Zimbabwéenne (Zimbabwe)</a></li>
+                    </ul>
+                </div>
+                <div class="col my-2">
+                    <label for="inputEmail4" class="form-label">Date de départ</label>
+                    <input type="date" id="start" name="trip-start" value="666" min="1900-01-01" max="2022-12-31">
+                </div>
+            </div>
+        </div>
+
+        <!-- exemple de voyage -->
+
+        <div class="contenair bg-dark text-white py-2 my-5" id="info">
+            <h4 class="row ms-2">7ème ciel</h4>
+            <div class="row ms-2">
+                <div class="col-4 ms-2">
+                    <p class="row">Date d'arrivé: 06/06/2066</p>
+                    <p class="row">Date de départ: 32/12/2066</p>
+                    <p class="row">Voyageurs: Mme Baby et Mr Shark</p>
+                </div>
+                <div class="col-4 ms-2">
+                    <p class="row">Destination: Le jardin d'Eden</p>
+                    <p class="row">Hôtel: La Pomme</p>
+                    <p class="row">Chambre: Suite du péché originel</p>
+                </div>
+                <div class="col">
+                    <button type="submit" class="btn btn-primary text-center my-2">Voir votre voyage</button>
+                </div>
+                <div class="col">
+                    <button type="submit" class="btn btn-primary text-center my-2">Télécharger le pdf</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <footer >
+        <div class="footer container-fluid bg-dark p-5 ">
+            <div class="footer-left">
+                <h5><a href="#" alt="CGU">Conditions générales d'utilisation</a></h5>
+            </div>
+            <div class="footer-center">
+                <ul>
+                    <li><a href="#"><img src="./img/twitter-logo.png" width="50" class="nav-img ft-img" alt="twitter logo"></a></li>
+                    <li><a href="#"><img src="./img/instagram-logo.png" width="50" class="nav-img ft-img" alt="instagram logo"></a></li>
+                    <li><a href="#"><img src="./img/facebook-logo.png" width="50" class="nav-img ft-img" alt="facebook logo"></a></li>
+                    <li><a href="#"><img src="./img/youtube-logo.png" width="50" class="nav-img ft-img" alt="youtube logo"></a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <h5><a href="#" alt="mentions légales">Mentions légales</a></h5>
+            </div>
+        </div>
+    </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

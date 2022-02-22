@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  background-color: #ebd4b7;
+  color: #2c251b;
+}
+a:link,
+a:visited {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #2c251b;
+}
+h1,
+h2 {
+  font-family: "Dancing Script", cursive;
+}
+
+.titre-page-perso {
+  text-align: center;
+}
+
+.intro {
+  text-align: center;
+}
+
+.intro-name {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.intro-cate {
+  font-size: 2rem;
+}
+.intro-img {
+  height: 8rem;
+  border-radius: 1000px;
+}
+
+.container {
+  background-image: linear-gradient(to right bottom, #b2936c, #deb887);
+}
+
+.intro {
+  grid-column: 1 / -1;
+  justify-self: center;
+}
+
+p {
+  font-size: 1.6rem;
+  margin-bottom: 0;
+}
+
+.add-horse-icon {
+  height: 3.2rem;
+}
+
+.btn-modify {
+  color: #2c251b;
+  background-color: #f2e3cf;
+}
+
+thead {
+  font-size: 1.6rem;
+}
+
+tbody {
+  font-size: 1.6rem;
+}

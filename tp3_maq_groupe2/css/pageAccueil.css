@@ -1,0 +1,119 @@
+#footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 20px;
+    border: 1px solid #c7c7c7;
+    background-color: #f6f6f6;
+}
+body {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    background-color: #ebd4b7;
+    color: #2c251b;
+  }
+
+header {
+    border: 1px solid #c7c7c7;
+    background-color: #f5f5f5;
+}
+
+#searchblock {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    border: #c7c7c7 2px solid;
+    margin: 30px 50px;
+    position: absolute;
+    z-index: 1;
+    background: #c7c7c7;
+    opacity: 0.9;
+    background-image: linear-gradient(to right bottom, #b2936c, #deb887);
+}
+
+#searchbar {
+    grid-column: 3/span 2;
+    grid-row: 1;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#locateBar {
+    grid-row: 3;
+    grid-column: 3/ span 2;
+    margin-top: 15px;
+margin-bottom: 15px;
+}
+
+#searchblock div:nth-child(2) {
+    justify-self: center;
+    align-self: center;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#searchblock div:nth-child(3) {
+    justify-self: center;
+    align-self: center;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#searchblock div:nth-child(4) {
+    justify-self: center;
+    align-self: center;
+    grid-column: 3;
+    grid-row: 2;
+}
+
+#searchblock div:nth-child(5) {
+    justify-self: center;
+    align-self: center;
+    grid-column: 4;
+    grid-row: 2;
+}
+
+#searchblock div:nth-child(6) {
+    justify-self: center;
+    align-self: center;
+    grid-column: 5;
+    grid-row: 2;
+}
+
+#searchblock div:nth-child(7) {
+    justify-self: center;
+    align-self: center;
+    grid-column: 6;
+    grid-row: 2;
+}
+#searchButton{
+    grid-row : 4;
+    grid-column: 3/ span 2;
+    justify-self: center;
+    align-self: center;
+}
+#profileCards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3,1fr);
+    border: #c7c7c7 2px solid;
+    margin: 320px 10px 30px 10px;
+    position: relative;
+    z-index: 1  ;
+    background: #c7c7c7;
+    background-image: linear-gradient(to right bottom, #b2936c, #deb887);
+}
+.card{
+    margin: 10px 30px;  
+    justify-self: center;
+}
+#banner{
+    height: 300px;
+    width: auto;
+    position: relative;
+
+}
+h1,
+h2 {
+  font-family: "Dancing Script", cursive;
+}

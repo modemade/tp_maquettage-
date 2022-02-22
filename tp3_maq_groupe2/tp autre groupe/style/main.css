@@ -1,0 +1,56 @@
+/* CSS NAVBAR */
+.nav-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+}
+
+.nav-img {
+    filter: invert(1);
+}
+
+.nav-fix {
+    padding-right: 200px;
+}
+
+.nav-cent {
+    width: 100%;
+    padding-left: 130px;
+}
+
+/* FOOTER NAVBAR */
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    color: white;
+}
+
+.footer-left {
+    align-self: center;
+    justify-self: start;
+}
+
+.footer-center {
+    align-self: center;
+    justify-self: center;
+}
+
+.footer-right {
+    align-self: center;
+    justify-self: end;
+}
+
+.ft-img {
+    margin: 0 10px;
+}
+
+ul li{
+    display: inline;
+  }
+
+  a, a:visited {
+      color: white;
+      text-decoration: none;
+  }

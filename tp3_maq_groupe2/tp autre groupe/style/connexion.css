@@ -1,0 +1,41 @@
+#carouselExampleIndicators, .carousel-inner {
+    height: 360px;
+    width: 600px;
+}
+
+legend {
+    text-align: center;
+}
+
+#carouselExampleIndicators, .formConnexion {
+    margin-top: 124px;
+    margin-bottom: 124px;
+}
+
+.formConnexion {
+    color: white;
+    height: 360px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.division {
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+}
+
+label {
+    margin-bottom: 4px;
+}
+
+.buttons {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+}

@@ -1,0 +1,152 @@
+#footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 20px;
+    border: 1px solid #c7c7c7;
+    background-color: #f6f6f6;
+}
+
+#note {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#pic {
+    width: 500px;
+    height: 600px;
+    margin-left: 30px;
+}
+
+#profileContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+#description {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+
+h2 {
+    grid-column: 2;
+    justify-self: center;
+}
+
+h4 {
+    text-align: center;
+}
+
+#race {
+    grid-column: 1;
+    grid-row: 2;
+    justify-self: center;
+}
+
+#robe {
+    grid-column: 1;
+    grid-row: 3;
+    justify-self: center;
+}
+
+#age {
+    grid-column: 1;
+    grid-row: 4;
+    justify-self: center;
+}
+
+#adress {
+    grid-column: 1;
+    grid-row: 5;
+    justify-self: center;
+}
+
+#pedigree {
+    grid-column: 3;
+    grid-row: 2;
+
+}
+
+#poulain {
+    grid-column: 3;
+    grid-row: 3;
+
+}
+
+#insemination {
+    grid-column: 2/ span 2;
+    grid-row: 4;
+    justify-self: center;
+}
+
+#prix {
+    grid-column: 2/ span 2;
+    grid-row: 5;
+    justify-self: center;
+}
+
+#proprio {
+    grid-column: 2/ span 2;
+    grid-row: 6;
+    justify-self: center;
+}
+
+fieldset {
+    border: #c7c7c7 2px solid;
+}
+
+.comment {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin: 10px 10px;
+    background-image: linear-gradient(to right bottom, #b2936c, #deb887);
+}
+
+.commentNote {
+    grid-column: 3;
+    grid-row: 1;
+    justify-self: end;
+}
+
+.commentContent {
+    grid-column: 1/ span 3;
+    grid-row: 2;
+}
+
+#commentContainer {
+    display: flex;
+    
+}
+
+#leaveCommentContainer {
+    width: 150rem;
+    margin-left: 10px;
+}
+
+#commentContainer {
+    margin: 10px 10px;
+    text-align: center;
+}
+
+select {
+    margin: 10px;
+}
+
+input {
+    margin: 10px;
+}
+body {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  background-color: #ebd4b7;
+  color: #2c251b;
+}
+#leaveCommentFiedlset{
+    background-image: linear-gradient(to right bottom, #b2936c, #deb887);
+}
+h1,
+h2 {
+  font-family: "Dancing Script", cursive;
+}

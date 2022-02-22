@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/pageAccueil.css" />
+    <link rel="stylesheet" href="css/info-perso.css" />
+    <title>Mon compte</title>
+  </head>
+  <body class="d-flex flex-column vh-100">
+    <header>
+      <nav class="navbar navbar-nav bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="pageAccueil.html">
+            <img src="/img/logo.png" alt="" width="70" height="66" />
+            <button type="button" class="btn btn-warning mx-2">
+              <a href="pageAccueil.html">Catalogue</a>
+            </button>
+          </a>
+          <div class="text-center">
+            <h1>Le Harem aux Licornes</h1>
+          </div>
+          <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <button type="button" class="btn btn-warning mx-3">
+                <a href="#">Mon compte</a>
+              </button>
+            </li>
+            <li class="nav-item">
+              <a href="partie html/panier.html">
+                <img src="/img/cartLogo.png" alt="" width="50" height="46" />
+              </a>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="btn btn-warning mx-2">
+                <a href="partie html/création_de_compte.html">Inscription</a>
+              </button>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="btn btn-warning mx-2">
+                <a href="#">Connexion</a>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h1 class="titre-page-perso p-4 mt-4">Ma page perso</h1>
+      <div class="container border border-4 border-dark p-4">
+        <div class="intro mb-4">
+          <img
+            class="intro-img border border-2 border-dark"
+            src="https://www.centre-europeen-formation.fr/wp-content/uploads/2018/05/img_metier_eleveur_equin.jpg"
+            alt="photo de profil"
+          />
+          <p class="intro-name">Johnny</p>
+        </div>
+        <div class="row">
+          <div class="infos-perso col ps-5 border border-2 border-dark me-3">
+            <fieldset class="">
+              <legend class="intro-cate">Mes infos-perso</legend>
+              <p><strong>Pseudo :</strong> Johnny</p>
+              <p><strong>Mot de passe :</strong> *********</p>
+              <p><strong>Mail :</strong> johnny@wanadoo.com</p>
+              <p><strong>Tél:</strong> 04.67.58.99.48</p>
+              <p><strong>Adresse :</strong> 8 rue Jules verne</p>
+              <p><strong>Code postal :</strong> 31 256</p>
+              <p><strong>Ville :</strong> Toulouse</p>
+              <button
+                class="btn mt-3 mb-3 border border-2 shadow-sm btn-modify"
+              >
+                Modifier mes informations
+              </button>
+            </fieldset>
+          </div>
+          <div class="mes-chevaux col border border-2 border-dark">
+            <fieldset>
+              <legend class="intro-cate">Mes chevaux</legend>
+              <table class="table table-striped table-bordered table-hover">
+                <thead>
+                  <tr>
+                    <th>Nom</th>
+                    <th>Race</th>
+                    <th>Age</th>
+                    <th>Nombre de poulains</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Peldi</td>
+                    <td>Pur-sang</td>
+                    <td>9</td>
+                    <td>15</td>
+                  </tr>
+                  <tr>
+                    <td>Gigi</td>
+                    <td>Mustang</td>
+                    <td>5</td>
+                    <td>4</td>
+                  </tr>
+                  <tr>
+                    <td>Patata</td>
+                    <td>Arabe</td>
+                    <td>6</td>
+                    <td>7</td>
+                  </tr>
+                  <tr>
+                    <td>Val</td>
+                    <td>Arabe</td>
+                    <td>8</td>
+                    <td>22</td>
+                  </tr>
+                </tbody>
+              </table>
+              <a href="formulaire-ajout-cheval.html">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="add-horse-icon d-block ms-auto"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+              </a>
+            </fieldset>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="mt-auto">
+      <!-- flex container -->
+      <div id="footer">
+        <div>
+          <a href="#">
+            <p>Condition générales</p>
+          </a>
+          <a href="#">
+            <p>Mention légales</p>
+          </a>
+        </div>
+        <!-- Section: Social media -->
+        <div>
+          <!-- Facebook -->
+          <a href="#!" role="button"
+            ><img src="/img/facebook.png" alt="" width="50" height="46"
+          /></a>
+
+          <!-- Twitter -->
+          <a href="#!" role="button"
+            ><img src="/img/insta.png" alt="" width="50" height="46"
+          /></a>
+
+          <!-- Google -->
+          <a href="#!" role="button"
+            ><img src="/img/twitter.png" alt="" width="50" height="46"
+          /></a>
+
+          <!-- Instagram -->
+          <a href="#!" role="button"
+            ><img src="/img/snap.png" alt="" width="50" height="46"
+          /></a>
+        </div>
+        <!-- Section: Social media -->
+
+        <!-- Contact button -->
+        <div>
+          <img src="/img/send.svg" alt="" width="50" height="46" />
+          <button type="button" class="btn btn-warning mx-2">
+            <a href="partie html/contact.html">Contact</a>
+          </button>
+        </div>
+        <!-- Contact button -->
+      </div>
+      <!-- flex container -->
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
